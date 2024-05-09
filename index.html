@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProMap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" style="color: wheat; text-align: center;">
+                <img src="iiitlogo.jpeg" alt="IIITs" class="logo-icon" style="height: 60px; width: 60px;">
+                <div class="logo-text">
+                    Indian Institute of Information Technology,Sonepat
+                </div> 
+            </div>
+            <div>
+                <h1>ProMap</h1>
+            </div>
+        </div>
+        <br><br>
+
+        <div id="innerContainer1">
+            <div class="form-group">
+                <label for="teacherNames">Enter Teacher Names:</label>
+                <input type="text" id="teacherNames" style="width: 120px; font-family: cursive; height: 30px; font-size: 17px;">
+                <button onclick="clearInput1()" style="height: 30px; padding: 2px;">Clear</button>
+            </div><br>
+            <div class="form-group">
+                <label for="examHalls">Enter Exam Hall Numbers:</label>
+                <input type="text" id="examHalls" style="width: 120px; font-family: cursive; height: 30px; font-size: 17px;">
+                <button onclick="clearInput2()" style="height: 30px; padding: 2px;">Clear</button>
+            </div><br>
+            <div class="form-group">
+                <label for="exams">Enter Date of Exams:</label>
+                <input type="text" id="exams" style="width: 120px; font-family: cursive; height: 30px; font-size: 17px;">
+                <button onclick="clearInput3()" style="height: 30px; padding: 2px;">Clear</button>
+            </div>
+        </div>
+        <br><br>
+
+        <div id="innerContainer2">
+            <button onclick="allocateTeachers()">Allocate Teachers</button>
+            <button onclick="generatePDF()">Download PDF</button>
+        </div>
+
+        <div id="allocationTable"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

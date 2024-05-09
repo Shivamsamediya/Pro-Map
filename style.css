@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('bgimg.webp');
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: cursive;
+}
+
+.container {
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-text{
+    font-size: 20px;
+    font-family:cursive;
+    text-align: center;
+}
+.logo-text:hover{
+    color: #8ef;
+    border-bottom: 2px solid #bef;
+    border-radius: 1px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+h1{
+    text-align: center;
+    color: beige;
+    font-family:cursive;
+}
+h1:hover{
+  color: #8ef;
+  border-bottom: 2px solid #bef;
+  border-radius: 1px;
+  transition: 0.5s;
+  z-index: 1;
+}
+#innerContainer1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 5px;
+}  
+.form-group label{
+    font-family:cursive;
+    color: wheat;
+    font-size: 22px;
+}
+.form-group input{
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+textarea {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: beige;
+    box-shadow: 0 0 5px beige;
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#innerContainer2{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 5px;
+}
+@media screen and (max-width: 500px) {
+    #innerContainer2 {
+      display: flex;
+      flex-direction: column;
+    }
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    font-family:cursive;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white ;
+    background-color:black;
+}
+
+#allocationTable{
+    color:wheat;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
