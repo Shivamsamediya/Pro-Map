@@ -16,7 +16,11 @@ function allocateTeachers() {
     var examHalls = inputElement2.value.split(',').map(name => name.trim());
     const inputElement3 = document.getElementById('exams');
     var exams = inputElement3.value.split(',').map(name => name.trim());
-    
+
+    if(teacherNames.length===1 || examHalls.length===1 || exams.length===1){
+        alert("Please Verify Inputs");
+    }
+
     var teachers = teacherNames.length;
     var examHall= examHalls.length;
     var dates= exams.length;
@@ -37,7 +41,7 @@ function allocateTeachers() {
             examHallIndex++;
         }
     }
-
+    
     displayAllocationTable(allocationResults);
 }
 
